@@ -7,15 +7,15 @@ pipeline {
 
     stages {
 
-        stage ("Compile")
+        stage ('Compile')
         steps {
             sh "mvn clean compile"
         }
-        stage ("Test")
+        stage ('Test')
         steps {
             sh "mvn clean test"
         }
-        stage ("Deploy")
+        stage ('Deploy')
         steps {
             sh "mvn clean install"
         }
